@@ -147,10 +147,11 @@ function closeModal() {
 
 (function () {
   const resize = () => {
-    let airbnb = document.getElementsByClassName('.airbnb-frame-ziba');
+    let airbnb = document.getElementsByClassName('airbnb-frame-ziba');
+    console.log('teste', airbnb);
 
     for (let airbnbaux of airbnb) {
-      let scale = (window.innerWidth - 15) / airbnbaux.offsetWidth;
+      let scale = (window.innerWidth - 50) / airbnbaux.offsetWidth;
       airbnbaux.style.transform = 'scale(' + scale + ')';
     }
   };
