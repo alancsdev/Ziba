@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #ececec;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 4rem auto fit-content(8rem);
+  grid-template-areas: "header"
+                       "main"
+                       "footer";
+  height: 100%;
+}
+
+main {
+  grid-area: main;
+  position: relative;
+  top: -4rem;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 150vw;
+  height: 150vh;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s linear;
+}
+
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.548);
+  z-index: 60;
+  display: flex;
+}
+
+.toggle-button-center {
+  margin: auto;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  .toggle-button {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  transform: translateX(-100%);
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 150vh;
+  transition: transform 300ms ease-out;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+  color: black !important;
+}
+
+.openMobileNav {
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: rgb(255, 255, 255);
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-header__brand {
+  color: var(white, #0e4f1f);
+  text-decoration: none;
+  font-weight: bold;
+  /* width: 20px; */
+}
+
+.main-header__brand img {
+  height: 4rem;
+  vertical-align: middle;
+}
+.main-header__brand2 img {
+  height: 6rem;
+}
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__items {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .main-nav__items {
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  .logo-ziba {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  margin: 0 1rem;
+}
+
+.main-nav__item a,
+.mobile-nav__item a {
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.main-footer {
+  background: black;
+  padding: 1rem;
+  margin-top: 0;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__link {
+  margin: 0.5rem 0;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+
