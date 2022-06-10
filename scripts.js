@@ -150,7 +150,7 @@ function closeModal() {
     let airbnb = document.getElementsByClassName('.airbnb-frame-ziba');
 
     for (let airbnbaux of airbnb) {
-      let scale = (window.innerWidth - 10) / airbnbaux.offsetWidth;
+      let scale = (window.innerWidth - 15) / airbnbaux.offsetWidth;
       airbnbaux.style.transform = 'scale(' + scale + ')';
     }
   };
