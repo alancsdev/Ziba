@@ -402,6 +402,12 @@ hr.solid {
   display: flex;
   justify-content: center;
 }
+
+.airbnb-frame-ziba {
+  width: 450px;
+  height: 300px;
+  margin: auto;
+}
 @media (min-width: 992px) {
   .airbnb {
     display: flex;

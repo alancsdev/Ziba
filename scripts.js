@@ -119,7 +119,6 @@ var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
 mobileNav.addEventListener('click', function () {
-
   mobileNav.classList.remove('openMobileNav');
   closeModal();
 });
@@ -145,3 +144,17 @@ function closeModal() {
     backdrop.style.display = 'none';
   }, 200);
 }
+
+(function () {
+  const resize = () => {
+    let airbnb = document.getElementsByClassName('.airbnb-frame-ziba');
+
+    for (let airbnbaux of airbnb) {
+      let scale = (window.innerWidth - 10) / airbnbaux.offsetWidth;
+      airbnbaux.style.transform = 'scale(' + scale + ')';
+    }
+  };
+
+  window.onload = () => resize();
+  window.onresize = () => resize();
+})();

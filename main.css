@@ -21,7 +21,7 @@
   background-position:0% 150%;
   background-size: cover; */
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 #apresentation {
@@ -71,8 +71,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .comfort_table td {
@@ -90,8 +90,14 @@
 
 .btnComodidades {
   -webkit-box-shadow: inset 0px 1px 0px 0px #caefab;
-          box-shadow: inset 0px 1px 0px 0px #caefab;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #77d42a), to(#5cb811));
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #77d42a),
+    to(#5cb811)
+  );
   background: -o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
   background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
   background-color: #77d42a;
@@ -109,7 +115,13 @@
   margin-top: 2rem;
 }
 .btnComodidades:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #5cb811), to(#77d42a));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #5cb811),
+    to(#77d42a)
+  );
   background: -o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
   background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
   background-color: #5cb811;
@@ -142,8 +154,9 @@
   padding: 0;
   width: 80vw;
   max-width: 80rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -207,8 +220,9 @@
   border: 1px solid #888;
   width: 80vw;
   max-width: 80rem;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -242,11 +256,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 10px;
 }
 
@@ -278,28 +292,35 @@ hr.solid {
 }
 
 #gallery {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 576px) {
+  #gallery {
+    margin-bottom: 150px;
+  }
 }
 
 .gallery-images {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin: auto;
   max-width: 1200px;
   max-height: 1200px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
+  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr
+    1.5rem 1fr 1.5rem 1fr;
   grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr 1.5rem 1fr;
   grid-template-rows: repeat(6, 1fr);
   gap: 1.5rem;
   justify-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .gallery-images > *:nth-child(1) {
@@ -551,22 +572,23 @@ hr.solid {
   .gallery-images {
     position: relative;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     margin: auto;
     max-width: 1200px;
     max-height: 1200px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr;
+    -ms-grid-columns: 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr
+      3.5rem 1fr 3.5rem 1fr;
     grid-template-columns: repeat(8, 1fr);
     -ms-grid-rows: 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr 3.5rem 1fr;
     grid-template-rows: repeat(6, 1fr);
     gap: 3.5rem;
     justify-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .gallery-images > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -768,10 +790,10 @@ hr.solid {
   max-width: 100%;
   margin-bottom: -52%;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
@@ -785,8 +807,8 @@ hr.solid {
 .gallery-images img:hover {
   z-index: 2;
   -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
 }
 
 #modalGallery {
@@ -822,11 +844,11 @@ hr.solid {
 @keyframes zoom {
   from {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -855,19 +877,19 @@ hr.solid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (min-width: 992px) {
   #booking {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -889,8 +911,8 @@ hr.solid {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 @media (min-width: 992px) {
   .airbnbandlocation {
@@ -900,8 +922,8 @@ hr.solid {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -910,17 +932,24 @@ hr.solid {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
+.airbnb-frame-ziba {
+  width: 450px;
+  height: 300px;
+  margin: auto;
+}
+
 @media (min-width: 992px) {
   .airbnb {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -929,8 +958,8 @@ hr.solid {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @media (min-width: 992px) {
   .location {
@@ -938,8 +967,8 @@ hr.solid {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .location iframe {
     width: 80%;
@@ -953,8 +982,8 @@ hr.solid {
   width: 100%;
   margin-top: 10px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 @media (min-width: 992px) {
   .instagram {
@@ -964,8 +993,8 @@ hr.solid {
     width: 50%;
     margin-top: 10px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
