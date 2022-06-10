@@ -145,17 +145,3 @@ function closeModal() {
   }, 200);
 }
 
-(function () {
-  const resize = () => {
-    let airbnb = document.getElementsByClassName('airbnb-frame-ziba');
-    console.log('teste', airbnb);
-
-    for (let airbnbaux of airbnb) {
-      let scale = (window.innerWidth - 50) / airbnbaux.offsetWidth;
-      airbnbaux.style.transform = 'scale(' + scale + ')';
-    }
-  };
-
-  window.onload = () => resize();
-  window.onresize = () => resize();
-})();

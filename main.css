@@ -935,14 +935,6 @@ hr.solid {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-.airbnb-frame-ziba {
-  width: 450px;
-  height: 300px;
-  margin: auto;
-}
-
-
 @media (min-width: 992px) {
   .airbnb {
     display: -webkit-box;
@@ -951,6 +943,18 @@ hr.solid {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+}
+
+.airbnb-frame-ziba {
+  width: 450px;
+  height: 300px;
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .airbnb-frame-ziba {
+    width: 100%;
   }
 }
 
